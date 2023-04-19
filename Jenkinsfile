@@ -37,7 +37,7 @@ pipeline {
                          git commit -m "docker image verison ${GIT_COMMIT_HASH}"
                          git push
                          cd ${WORKSPACE}
-                         sudo rm -rf *'''
+                         sudo rm -rf * .git'''
                 }
             }
         }
