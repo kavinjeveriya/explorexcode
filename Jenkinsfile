@@ -29,7 +29,7 @@ pipeline {
                         sh "git clone https://github.com/kavinjeveriya/explorexhelm.git"
                         sh'''
                          cd explorexhelm
-                         git checkout dev
+                         git checkout master
                          git config --global user.email 'kavinjaveriya@gmail.com'
                          git config --global user.name 'kavinjaveriya'
                          sed -i "s/tag:.*/tag: ${GIT_COMMIT_HASH}/" ./demoapp/values.yaml  
